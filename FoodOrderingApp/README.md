@@ -52,9 +52,17 @@ To design a scalable food ordering system, we divide the system into smaller sub
   Add-ons can be ordered with dishes but not separately.
 
 #### Relationships
-- Restaurant has an aggregation relationship with restaurant manager because we want the restaurants to exist independantly even before the restaurant Manager is created.
-- Restaurant, Menu, Dish, Dish Add on has a composite relationship because each cannot exist without the other.
+
+- **Restaurant** has an **aggregation** relationship with **Restaurant Manager**  
+  Restaurants can exist independently, even before the Restaurant Manager is created.
+
+- **Restaurant**, **Menu**, **Dish**, and **Dish Add-On** have a **composition** relationship  
+  These components cannot exist without each other.
+
 
 The simple sketch for the food subsystem is this.
 ![alt text](/FoodOrderingApp/images/image.png)
+
+### Delivery Subsystem
+
 
