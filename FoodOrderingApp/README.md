@@ -1,4 +1,8 @@
 # Food Ordering App Using LLD
+NOTE :
+- I have taken the UML and the sketch from youtube - [https://www.youtube.com/watch?v=XN17WWiUzT4&ab_channel=KeertiPurswani] for my understanding of how everything works but the code is written by me since I wanted Java implementation.
+- From this we will get a basic idea how to start in an interview when given this design.
+- In any interview, we won't be given the whole design, just the subparts - Food Ordering, Delivering, Notification System.
 
 ## System Design Approach and Basics
 
@@ -65,4 +69,24 @@ The simple sketch for the food subsystem is this.
 
 ### Delivery Subsystem
 
+- **Delivery Manager:**  
+  Manages the delivery subsystem and receives orders from the order subsystem.
+
+- **Delivery MetaData:**  
+  Stores information about the delivery, such as user location, restaurant location, and order ID.
+
+- **Delivery Partner Matching Strategy:**  
+  Interface with the function `matchDeliveryPartner`. Implements the Strategy Pattern for flexible partner matching.
+  - **Location Based DPMS:**  
+    Matches delivery partners based on location using `DeliveryMetaData`.
+- **Strategy Manager:**  
+  Responsible for selecting which matching strategy to use.
+
+This is the sketch for Delivery Subsystem.
+![alt text](/FoodOrderingApp/images/image2.png)
+
+## UML
+This is the UML representation of the app. The UML contains extra classes than discussed above but I have implemented it in the code. During the interview, we can choose to omit this part and explain only the basics.
+
+![alt text](/FoodOrderingApp/images/image3.png)
 
