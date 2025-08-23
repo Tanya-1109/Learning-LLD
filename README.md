@@ -8,5 +8,6 @@ As I continue learning, I'll keep adding new designs
 ### Projects
 
 - [Ride Sharing App](./RideSharingApp/README.md)
-- [Food Ordering App](./FoodOrderingApp)
+- [Food Ordering App](./FoodOrderingApp/README.md)
+- [Movie Ticket Booking App](./MovieTicketBookingApp/README.md)
 
