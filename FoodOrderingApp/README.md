@@ -65,6 +65,7 @@ To design a scalable food ordering system, we divide the system into smaller sub
 
 
 The simple sketch for the food subsystem is this.
+
 ![alt text](/FoodOrderingApp/images/image.png)
 
 ### Delivery Subsystem
@@ -83,6 +84,7 @@ The simple sketch for the food subsystem is this.
   Responsible for selecting which matching strategy to use.
 
 This is the sketch for Delivery Subsystem.
+
 ![alt text](/FoodOrderingApp/images/image2.png)
 
 ## UML
