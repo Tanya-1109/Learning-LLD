@@ -5,10 +5,17 @@ NOTE :
 
 ## Requirements
 
-1. Admin Access - Admin has the authority to add, remove movies.
-2. Movie Management - Controls the duration of the movie along with the seats available for a particular theatre.
-3. Booking Flow - The user has the authority to select its location, choose the movie, select the desired seats and make the choice of payment.
-4. Ticket Generation - After the payment, the user should get a generated ticket for its choice of movie and seats.
+1. **Admin Access:**  
+   Admin has the authority to add or remove movies.
+
+2. **Movie Management:**  
+   Controls the duration of movies and manages seat availability for each theatre.
+
+3. **Booking Flow:**  
+   Users can select their location, choose a movie, pick desired seats, and choose a payment method.
+
+4. **Ticket Generation:**  
+   After payment, users receive a ticket for their selected movie and seats.
 
 
 
