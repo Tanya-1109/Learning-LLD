@@ -1,4 +1,12 @@
-package MovieTicketBookingApp.contollers;
+package MovieTicketBookingApp.controllers;
+
+import java.util.*;
+
+import MovieTicketBookingApp.enums.City;
+import MovieTicketBookingApp.theatre.Show;
+import MovieTicketBookingApp.theatre.Theatre;
+import MovieTicketBookingApp.movies.Movie;
+
 
 public class TheatreController {
     Map<City, List<Theatre>> cityVsTheatres;

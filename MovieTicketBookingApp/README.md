@@ -2,6 +2,7 @@
 NOTE :
 - I have taken the UML and the code from youtube - [https://www.youtube.com/watch?v=t2FiaSThCw8&ab_channel=MrunmaiDahare] for my understanding of how everything works but the code is written by me since I wanted Java implementation.
 - From this we will get a basic idea how to start in an interview when given this design.
+- I have not fully implemented the payment service here, just a dummy class, but we can talk about it in the interview.
 
 ## Requirements
 
@@ -27,7 +28,11 @@ NOTE :
 6. Theatre - Contains the attributes like screen, shows, city, address. A theatre must have one or more screens and multiple shows.
 7. Screen - defines the id and seats. This class cannot exist without the Theatre class hence, has a "composition" relationship with the theatre class.
 8. Show - contain the show id, duration, screen, starting time etc. This class is "associated" with Theatre class. This is also "associated" with Movie class and Seat class.
-9. 
+
+## Handling Concurrency 
+- It is a very importan t question from interview POV.
+- It occurs when 2 users might book the same seat simultaneously.
+
 
 
 

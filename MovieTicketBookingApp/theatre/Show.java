@@ -3,6 +3,8 @@ package MovieTicketBookingApp.theatre;
 import java.util.ArrayList;
 import java.util.List;
 
+import MovieTicketBookingApp.movies.Movie;
+
 public class Show {
     int showId;
     Movie movie;

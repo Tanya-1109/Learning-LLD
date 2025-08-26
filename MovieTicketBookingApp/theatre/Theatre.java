@@ -3,6 +3,8 @@ package MovieTicketBookingApp.theatre;
 import java.util.ArrayList;
 import java.util.List;
 
+import MovieTicketBookingApp.enums.City;
+
 public class Theatre {
     int theatreId;
     String address;

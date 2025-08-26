@@ -1,4 +1,8 @@
-package MovieTicketBookingApp.contollers;
+package MovieTicketBookingApp.controllers;
+import java.util.*;
+import MovieTicketBookingApp.enums.City;
+import MovieTicketBookingApp.movies.Movie;  
+
 
 public class MovieController {
     Map<City, List<Movie>> cityVsMovies;
@@ -18,7 +22,7 @@ public class MovieController {
 
     public Movie getMovieByName(String movieName){
         for(Movie movie: allMovies){
-            if(movie.getName().equals(movieName)){
+            if(movie.getMovieName().equals(movieName)){
                 return movie;
             }
         }
