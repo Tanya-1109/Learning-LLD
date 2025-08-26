@@ -1,5 +1,10 @@
 package MovieTicketBookingApp.services;
 
+import java.util.Scanner;
+
+import MovieTicketBookingApp.contollers.MovieController;
+import MovieTicketBookingApp.contollers.TheatreController;
+
 public class BookingService {
     private static BookingService instance;
 
@@ -8,7 +13,7 @@ public class BookingService {
     private final Scanner scanner;
 
     private BookingService(){
-        movieController = new MovieController()
+        movieController = new MovieController();
         theatreController = new TheatreController();
         scanner = new Scanner(System.in);
     }
