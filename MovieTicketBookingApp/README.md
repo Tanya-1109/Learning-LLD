@@ -1,6 +1,6 @@
 # Movie Ticket Booking App Using LLD 
 NOTE :
-- I have taken the UML and the code from youtube - [https://www.youtube.com/watch?v=t2FiaSThCw8&ab_channel=MrunmaiDahare] for my understanding of how everything works but the code is written by me since I wanted Java implementation.
+- I have taken the UML and the code from youtube - [https://www.youtube.com/watch?v=t2FiaSThCw8&ab_channel=MrunmaiDahare] for my understanding of how everything works.
 - From this we will get a basic idea how to start in an interview when given this design.
 - I have not fully implemented the payment service here, just a dummy class, but we can talk about it in the interview.
 

@@ -10,4 +10,5 @@ As I continue learning, I'll keep adding new designs
 - [Ride Sharing App](./RideSharingApp/README.md)
 - [Food Ordering App](./FoodOrderingApp/README.md)
 - [Movie Ticket Booking App](./MovieTicketBookingApp/README.md)
+- [Parking Lot Design](./ParkingLotDesign/README.md)
 
