@@ -55,7 +55,7 @@ NOTE :
 
 ## Handling Concurrency
 
-Concurrency is a crucial aspect in ticket booking systems, especially during high traffic events. Also concurrency is important from the interview point of view where we can asked about how to handle conconcurrency.
+Concurrency is a crucial aspect in ticket booking systems, especially during high traffic events. Also concurrency is important from the interview point of view where we can be asked about how to handle conconcurrency.
 
 - **Pessimistic Approach:**  
   When a user views a seat, it is locked for others and released only when the user stops viewing.  
