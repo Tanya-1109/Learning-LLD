@@ -16,3 +16,6 @@ NOTE :
 7. Dynamic Configuration - Number of parking sopts for cars and bikes should be configurable.
 8. Fee Models - The system should have a per hour fee model for different types of vehicles.
 
+## Classes Requuired 
+1. Vehicle - Consists of Vehicle Types, license number etc.Will have child classes like Car , Bike. This class will also calculate the ticket price for the vehicle according to the fee model. Here we are implementing A factory design pattern so that whenever a new type of vehicle is added we don't need to create functions again.
+2. 
