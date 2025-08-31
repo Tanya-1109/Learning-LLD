@@ -18,4 +18,6 @@ NOTE :
 
 ## Classes Requuired 
 1. Vehicle - Consists of Vehicle Types, license number etc.Will have child classes like Car , Bike. This class will also calculate the ticket price for the vehicle according to the fee model. Here we are implementing A factory design pattern so that whenever a new type of vehicle is added we don't need to create functions again.
-2. 
+2. Ticket - Contains the parkingSpot object, info about the vehicle and the start time so that the hours can be calculated.
+3. Payment - encapsulates the paymentStartegy objects which contains the 3 different types of payment strategies - CreditCardPayment, UPIPayment, CashPayment. The strategy design pattern is applied here to create a class for all the starategies so that whenever a new strategy is added it doesnt affect the others.
+4. 
