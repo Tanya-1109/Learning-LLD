@@ -21,4 +21,7 @@ NOTE :
 2. Ticket - Contains the parkingSpot object, info about the vehicle and the start time so that the hours can be calculated.
 3. Payment - encapsulates the paymentStartegy objects which contains the 3 different types of payment strategies - CreditCardPayment, UPIPayment, CashPayment. The strategy design pattern is applied here to create a class for all the starategies so that whenever a new strategy is added it doesnt affect the others.
 4. Parking Spot - Parking spot is an abstarct class which implements the BikeParkinSpot and CarParkingSpot. Contains various objects like the type of vehicle stored, or the number of the spot, or if the spot is occupied or not.
-5. Parking Floor - 
+5. Parking Lot - Consists of the available floors, available spots, parks a vehicle or vacates a spot. 
+6. Entrance Gate - Vehicles are assigned spot by entering the type of vehicle and the liscence number of the vehicle.
+7. Exit Gate - Calculate the hours spent, the parking fee and chooses the payment option.
+8. 
