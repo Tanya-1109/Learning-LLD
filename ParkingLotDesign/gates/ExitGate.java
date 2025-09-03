@@ -9,9 +9,9 @@ public class ExitGate {
     private ParkingLot parkingLot;
     private PaymentService paymentService;
 
-    public ExitGate(ParkingLot parkingLot, PaymentService paymentService) {
+    public ExitGate(ParkingLot parkingLot, ParkingLotDesign.payment.PaymentService paymentService2) {
         this.parkingLot = parkingLot;
-        this.paymentService = paymentService;
+        this.paymentService = paymentService2;
     }
 
     public void processExit(int spotNumber, int hoursStayed) {

@@ -4,24 +4,76 @@ NOTE :
 - From this we will get a basic idea how to start in an interview when given this design.
 
 ## System Flow
- Vehicle -----> Entrance Gate -----> Ticket ----->Multi- Level Parking Lot -----> Parking Spot -----> Exit Gate -----> Payment 
+
+Vehicle &rarr; Entrance Gate &rarr; Ticket &rarr; Multi-Level Parking Lot &rarr; Parking Spot &rarr; Exit Gate &rarr; Payment
+
+---
 
 ## Requirements
-1. Multi - Level Flooring - The parking lot should be multilevel for our customers to park their vehicle 
-2. Parking Ticket - Customers should get their ticket at entry points and pay thir ticket price at the exit.
-3. Payment Method - Customers can pay via various payment method like UPI, Cash, credit Card etc.
-4. Capacity Management : The system must not allow more vehicles to be parked than the parking slots. It show display an error message that the parking space is full.
-5. Parking Spots: Each level should have multiple parking spots for different vehicles( Car, Bike) and respective vehicles dhould be parked at respective slots.
-6. Vehicle Types - The parking lot should support various vehicle type.
-7. Dynamic Configuration - Number of parking sopts for cars and bikes should be configurable.
-8. Fee Models - The system should have a per hour fee model for different types of vehicles.
 
-## Classes Requuired 
-1. Vehicle - Consists of Vehicle Types, license number etc.Will have child classes like Car , Bike. This class will also calculate the ticket price for the vehicle according to the fee model. Here we are implementing A factory design pattern so that whenever a new type of vehicle is added we don't need to create functions again.
-2. Ticket - Contains the parkingSpot object, info about the vehicle and the start time so that the hours can be calculated.
-3. Payment - encapsulates the paymentStartegy objects which contains the 3 different types of payment strategies - CreditCardPayment, UPIPayment, CashPayment. The strategy design pattern is applied here to create a class for all the starategies so that whenever a new strategy is added it doesnt affect the others.
-4. Parking Spot - Parking spot is an abstarct class which implements the BikeParkinSpot and CarParkingSpot. Contains various objects like the type of vehicle stored, or the number of the spot, or if the spot is occupied or not.
-5. Parking Lot - Consists of the available floors, available spots, parks a vehicle or vacates a spot. 
-6. Entrance Gate - Vehicles are assigned spot by entering the type of vehicle and the liscence number of the vehicle.
-7. Exit Gate - Calculate the hours spent, the parking fee and chooses the payment option.
-8. 
+1. **Multi-Level Flooring:**  
+   The parking lot should be multilevel to accommodate more vehicles.
+
+2. **Parking Ticket:**  
+   Customers receive a ticket at entry and pay for it at the exit.
+
+3. **Payment Methods:**  
+   Customers can pay via UPI, cash, credit card, etc.
+
+4. **Capacity Management:**  
+   The system must not allow more vehicles than available parking slots.  
+   Displays an error message when the parking space is full.
+
+5. **Parking Spots:**  
+   Each level should have multiple parking spots for different vehicles (car, bike).  
+   Vehicles must be parked in their respective slots.
+
+6. **Vehicle Types:**  
+   The parking lot should support various vehicle types.
+
+7. **Dynamic Configuration:**  
+   The number of parking spots for cars and bikes should be configurable.
+
+8. **Fee Models:**  
+   The system should have a per-hour fee model for different types of vehicles.
+
+---
+
+## Classes Required
+
+1. **Vehicle:**  
+   Consists of vehicle types, license number, etc.  
+   Has child classes like `Car` and `Bike`.  
+   Calculates ticket price according to the fee model.  
+   Implements the Factory Design Pattern for easy addition of new vehicle types.
+
+2. **Ticket:**  
+   Contains the `ParkingSpot` object, vehicle information, and start time for calculating hours parked.
+
+3. **Payment:**  
+   Encapsulates payment strategy objects for different payment methods:  
+   `CreditCardPayment`, `UPIPayment`, `CashPayment`.  
+   Uses the Strategy Design Pattern for flexible payment options.
+
+4. **Parking Spot:**  
+   Abstract class implemented by `BikeParkingSpot` and `CarParkingSpot`.  
+   Contains details like vehicle type, spot number, and occupancy status.
+
+5. **Parking Lot:**  
+   Manages available floors and spots.  
+   Responsible for parking vehicles and vacating spots.
+
+6. **Entrance Gate:**  
+   Assigns parking spots by entering vehicle type and license number.
+
+7. **Exit Gate:**  
+   Calculates hours spent, parking fee, and handles payment options.
+
+8. **Main:**  
+   Interacts with the user.
+
+---
+
+## UML
+
+View the class diagram - [Lucidchart UML Link](https://lucid.app/lucidspark/ae92de08-4bee-41e2-855e-ccadb1382477/edit?invitationId=inv_d4f1737e-2ca0-4186-825d-67e5278ff0fc&page=0_0#)
